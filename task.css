@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html, body {
+  font-family: 'Permanent Marker', cursive;
+  height: 100%; /**Had to add this so the image would cover whole page**/
+  background-color: #EDEDED;
+}
+/****Misc*****
+background image https://blogmedia.evbstatic.com/wp-content/uploads/rally-legacy/2016/06/22133450/9231018838_8f1d5b1943_k-1302x900.jpg
+background colors
+#D3CFD4  grey
+#D9C19F  tan
+#6177B1  light blue
+#041E4E  dark blue
+#FEFEFE  white
+
+Font
+font-family: 'Permanent Marker', cursive
+
+Font logon
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Oregano', cursive;
+***/
+#all-task{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.header {
+  background: url(https://blogmedia.evbstatic.com/wp-content/uploads/rally-legacy/2016/06/22133450/9231018838_8f1d5b1943_k-1302x900.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FEFEFE;
+  padding: 75px 15px;
+  text-align: right;
+  position: relative;
+}
+.header .logo {
+  float: left;
+  font-size: 50px;
+  font-family: 'Saira Stencil One', cursive;
+}
+.header .task-total .task {
+  display: inline;
+  margin-right: 15px;
+}
+.header .task-total .task .number {
+  color: #D9C19F;
+  font-size: 60px;
+  margin: 0 0px 0 0;
+  position: relative;
+  top: 15px;
+}
+.header .add-circle {
+  position: absolute;
+  right: 40px;
+  top: 160px;
+  padding: 10px;
+
+}
+.header .add-circle .fa {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #D9C19F;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background-color: #6177B1;
+  font-size: 40px;
+  color: #D9C19F;
+  text-align: center;
+  padding-top: 27px;
+}
+
+/**content section***/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+#content-section {
+  width: 100%;
+  overflow: auto;
+}
+#content-section .task-container {
+  margin: 40px 0;
+  position: relative;
+}
+#content-section .task-box {
+  padding: 20px;
+  border-bottom: 2px solid #CCCCCC;
+  margin: 0 0 20px 0;
+  background: #ffffff;
+  font-size: 25px;
+}
+#content-section .task-box .title {
+  margin: 0 0 15px 0;
+}
+#content-section .task-box .date {
+  font-size: 15px;
+}
+#content-section .task-box .check-box {
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #041E4E;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  color: #D9C19F;
+}
+
+.task-form {
+  background-color: #6177B1;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  padding: 50px 0;
+  transform: translate(0, 100%);
+  transition: all 1s ease-in-out;
+}
+.active {  /**created via jquery to move form in and out of page**/
+  transform: translate(0, 0);
+}
+.task-form .close-btn {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  padding: 15px;
+}
+.task-form .close-btn .fa {
+  font-size: 36px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.task-form form {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.task-form form h3 {
+  margin: 50px 0;
+  font-size: 36px;
+  text-align: center;
+}
+.task-form label {
+  display: block;
+  font-size: 24px;
+  margin: 0 0 15px 0;
+}
+.task-form input, textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 36px;
+  color: #ffffff;
+  width: 100%;
+}
+.task-form input:focus {  /*needed this so input would be borderless when clicked**/
+  border: none;
+  outline: none;
+}
+.task-form textarea {
+  height: 250px;
+}
+.task-form textarea:focus {
+  border: none;
+  outline: none;
+}
+.task-form button {
+  background-color: #FEFEFE;
+  padding: 15px 20px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #6177B1;
+  font-family: 'Permanent Marker', cursive;
+}
+/***Start video at 37 mins***/

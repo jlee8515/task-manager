@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html, body {
+  font-family: 'Permanent Marker', cursive;
+  height: 100%;  /**Had to add this so the image would cover whole page**/
+  overflow: hidden;
+}
+/****Misc*****
+background image https://blogmedia.evbstatic.com/wp-content/uploads/rally-legacy/2016/06/22133450/9231018838_8f1d5b1943_k-1302x900.jpg
+background colors
+#D3CFD4  grey
+#D9C19F  tan
+#6177B1  light blue
+#041E4E  dark blue
+#FEFEFE  white
+
+Font
+font-family: 'Permanent Marker', cursive
+***/
+#home {
+  background: url(https://blogmedia.evbstatic.com/wp-content/uploads/rally-legacy/2016/06/22133450/9231018838_8f1d5b1943_k-1302x900.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;  /*center text in the middle of page*/
+  align-items: center; /*center text in the middle of page*/
+  justify-content: center; /*center text in the middle of page*/
+}
+.welcome-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 15px;
+  text-align: center;
+}
+h1 {
+  font-size: 35px;
+  color: #D9C19F;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.btn {
+  width: 100%;
+  text-decoration: none;
+  color: #FEFEFE;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+}
